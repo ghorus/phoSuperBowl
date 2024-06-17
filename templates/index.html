@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static', filename='index.css')}}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='phoSuperBowlLogo.jpg')}}">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:slnt,wght@-10..0,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Pho Super Bowl</title>
+</head>
+<body>
+    <nav id="navigationBar">
+        <img id="phoSuperBowlLogo" src="{{url_for('static', filename='phoSuperBowlLogo.jpg')}}" alt="Pho Super Bowl logo">
+        <div>
+            <h1>PHỞ SUPER BOWL</h1>
+            <h2>&lpar;626&rpar;293-7018</h2>
+        </div>
+        <address>1300 E MAIN ST. STE #105<br>ALHAMBRA, CA 91801</address>
+        <ul>
+            <li>ABOUT</li>
+            <li>MENU</li>
+            <li>WHAT IS PHO?</li>
+        </ul>
+    </nav>
+    <img id="phoBowl" src="{{url_for('static', filename='phobowl.png')}}" alt="Hands holding a bowl of pho">
+</body>
+</html>
