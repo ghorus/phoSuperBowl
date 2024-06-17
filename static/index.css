@@ -45,7 +45,62 @@ body {
     margin:0;
 }
 
-#phoBowl {
+.co-name {
+    font-size: 40px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#navigation-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navigation-menu-links a {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.inter-400,
+.inter-600,
+.inter-800 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.inter-400 {
+    font-weight: 400;
+}
+
+.inter-600 {
+    font-weight: 600;
+}
+
+.inter-800 {
+    font-weight: 800;
+}
+
+
+#pho-bowl {
     max-width: 500px;
     height: auto;
+}
+#skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
 }

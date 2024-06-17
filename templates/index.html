@@ -12,19 +12,27 @@
     <title>Pho Super Bowl</title>
 </head>
 <body>
-    <nav id="navigationBar">
-        <img id="phoSuperBowlLogo" src="{{url_for('static', filename='phoSuperBowlLogo.jpg')}}" alt="Pho Super Bowl logo">
-        <div>
-            <h1>PHỞ SUPER BOWL</h1>
-            <h2>&lpar;626&rpar;293-7018</h2>
+    <a href="#site-navigation" id="skip-link">Skip to menu</a>
+    <nav id="navigation-bar" aria-label="Pho Super Bowl Navigation Bar">
+        <div id="logo-container">
+            <img id="pho-superbowl-logo" src="{{url_for('static', filename='phoSuperBowlLogo.jpg')}}" alt="Pho Super Bowl logo">
+            <div>
+                <h1 class="inter-800 co-name">PHỞ SUPER BOWL</h1>
+                <h2 class="inter-400">&lpar;626&rpar;293-7018</h2>
+            </div>
         </div>
-        <address>1300 E MAIN ST. STE #105<br>ALHAMBRA, CA 91801</address>
-        <ul>
-            <li>ABOUT</li>
-            <li>MENU</li>
-            <li>WHAT IS PHO?</li>
-        </ul>
+        <address class="inter-400">1300 E MAIN ST. STE #105<br>ALHAMBRA, CA 91801</address>
+        <div id="navigation-menu-links" aria-label="Navigation menu links">
+            <a class="inter-600" aria-label="About Pho Super Bowl">ABOUT</a>
+            <a class="inter-600" aria-label="Food menu">MENU</a>
+            <a class="inter-600" aria-label="What is pho?">WHAT IS PHO?</a>
+        </div>
     </nav>
-    <img id="phoBowl" src="{{url_for('static', filename='phobowl.png')}}" alt="Hands holding a bowl of pho">
+    <main>
+        <img id="pho-bowl" src="{{url_for('static', filename='phobowl.png')}}" alt="Hands holding a bowl of pho">
+        
+    </main>    
+    <div style="height:100vh">something</div>
+    <div id="site-navigation">site nav</div>
 </body>
 </html>
