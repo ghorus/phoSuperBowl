@@ -40,40 +40,83 @@ font-style: normal;
 }
    */
 
+button {
+    cursor: pointer;
+}
+
+#change-addy-button {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 19px;
+    color: white;
+    font-size: 13px;
+    height: 40px;
+    padding: 8px 12px;
+}
+
+#change-addy-button:hover {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 19px;
+    color: black;
+    transition: 0.2s;
+}
+
+#change-addy-button:active {
+    transform: translateY(5px);
+}
+
+#addy-container {
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    opacity: 0.3;
+}
+
+#address {
+    font-size: 15px;
+    padding: 8px 4px;
+    text-align: center;
+    width: 250px;
+}
+
 body {
     background-color: #B1FFD5;
-    margin:0;
+    margin: 0;
 }
 
-.co-name {
-    font-size: 40px;
-}
-
-#logo-container {
-    display: flex;
-    align-items: center;
-}
-
-#navigation-bar {
+#co-info {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
 }
-
-#navigation-menu-links a {
-    margin: 20px;
-}
-
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
+#dropdown-menu {
+    height: 32px;
+    width: auto;
+    display: none;
+}
+
+.gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 h1,
 h2 {
     margin: 0;
 }
-
+.co-name {
+    font-size: 33px;
+}
 .inter-400,
 .inter-600,
 .inter-800 {
@@ -94,13 +137,206 @@ h2 {
     font-weight: 800;
 }
 
+.jetbrains-mono-400 {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#landing-page {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#link-container {
+    height: 0px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#navigation-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 50px 0px;
+    padding: 20px 0px;
+}
+
+#navigation-menu-links a {
+    font-size: 21px;
+    margin: 20px;
+}
+
+#operational-hours {
+    font-size: 20px;
+    margin: 0px 0px 0px -300px;
+
+}
 
 #pho-bowl {
-    max-width: 500px;
+    max-width: 670px;
     height: auto;
+}
+#pho-bowl-container {
+    position: relative;
+}
+
+#taste-image {
+    position: absolute;
+    font-size: 49px;
+    top: 20px;
+    transform: rotate(23deg);
+    right: 0;
+}
+
+#pho-superbowl-logo {
+    height: 60px;
+    margin: 5px;
 }
 #skip-link {
     position: absolute;
     top: -9999px;
     left: -9999px;
+}
+#taste {
+    font-size: 95px;
+    line-height: 1;
+}
+
+#covid-update {
+    max-width: 650px;
+}
+
+.contact-number {
+    font-size: 20px;
+}
+
+#cuisine-type {
+    font-size: 35px;
+}
+
+#cuisine-taste {
+    margin: 55px 0px;
+}
+
+
+@media only screen and (max-width: 1455px) {
+    #pho-bowl {
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    #dropdown-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #dropdown-menu:hover {
+        transform: translateY(-2px);
+        transition: 0.2s;
+    }
+
+    #link-container {
+        align-items: center;
+        background-color: #B1FFD5;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+        overflow-y: hidden;
+        padding: 0px;
+        /*20*/
+        position: absolute;
+        width: 155px;
+        top: 50px;
+    }
+
+    #navigation-menu-links {
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #navigation-menu-links a {
+        margin: 10px 0px;
+    }
+
+    #operational-hours {
+        margin: 0px;
+    }
+
+    #taste {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    #co-info {
+        text-align: center;
+    }
+
+
+    #landing-page {
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #pho-bowl {
+        opacity: 0.2;
+        position: absolute;
+        max-width: 670px;
+        z-index: -1;
+    }
+
+    #pho-bowl-container {
+        position: relative;
+    }
+
+    #taste-image {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #addy-container {
+        flex-direction: column;
+        margin: 35px;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    #navigation-bar {
+        flex-direction: column;
+    }
+
+    #navigation-menu-links {
+        align-items: center;
+    }
+
+    #pho-bowl {
+        max-width: 500px;
+    }
+
+    #pho-superbowl-logo {
+        display: none;
+    }
 }
